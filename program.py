@@ -138,7 +138,7 @@ class App(tk.Tk):
                         get_column_letter(j + 1)].width
                     ws.row_dimensions[row].height = None
                 row += 1
-        for row in ws.iter_rows(min_row=1, max_row=ws.max_row, min_col=8, max_col=8):
+        for row in ws.iter_rows(min_row=2, max_row=ws.max_row, min_col=8, max_col=8):
             for cell in row:
                 cell.border = thin_border
         self.output_text.insert(tk.END, 'Файл успешно сгенерирован и сохранен\n')
